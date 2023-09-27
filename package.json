@@ -34,6 +34,8 @@
     "node": ">=10.9.0"
   },
   "dependencies": {
+    "hexo": "^6.3.0",
+    "hexo-filter-mathjax": "^0.9.0",
     "hexo-generator-sitemap": "^3.0.1",
     "hexo-next-fireworks": "github:next-theme/hexo-next-fireworks",
     "hexo-next-three": "github:next-theme/hexo-next-three"

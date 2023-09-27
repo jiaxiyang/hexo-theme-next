@@ -219,9 +219,9 @@ links:
 toc:
   enable: true
   # Automatically add list number to toc.
-  number: false
+  number: true
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: true
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: true
   # Maximum heading depth of generated toc.
@@ -766,7 +766,7 @@ local_search:
   # If manual, trigger search by pressing enter key or search button.
   trigger: auto
   # Show top n results per article, show all results by setting to -1
-  top_n_per_article: 1
+  top_n_per_article: -1
   # Unescape html strings to the readable one.
   unescape: false
   # Preload the search data when the page loads.
@@ -836,8 +836,9 @@ pdf:
 mermaid:
   enable: true
   # Available themes: default | dark | forest | neutral
-  theme: dark
-
+  theme:
+    light: default
+    dark: dark
 
 # ---------------------------------------------------------------
 # Animation Settings
@@ -875,6 +876,7 @@ pace:
 
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
+# git clone https://github.com/theme-next/theme-next-three source/lib/three
 three:
   enable: true
   three_waves: false
@@ -1025,3 +1027,12 @@ custom_css:
     enable: true
     normal_color: "#0593d3"
     hover_color: "#0477ab"
+
+# git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest
+canvas_nest:
+  enable: false
+  onmobile: true # 是否在移动端显示
+  color: '0,0,255' # 动态背景中线条的 RGB 颜色
+  opacity: 0.5 # 动态背景中线条透明度
+  zIndex: -1 # 动态背景的 z-index 属性值
+  count: 99 # 动态背景中线条数量
